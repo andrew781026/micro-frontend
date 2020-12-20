@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>ezoom-comp demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./ezoom-comp.js"></script>
+
+
+<ezoom-comp @click-fn="testFunction" ></ezoom-comp>
+
+<script>
+    new Vue({
+        el: "ezoom-comp",
+        data: {},
+        methods: {
+            testFunction: function(event) {
+                console.log('test clicked')
+            }
+        }
+    })
+</script>

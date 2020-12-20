@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:win:components": "vue-cli-service build --target wc --inline-vue --name ezoom-comp ./src/components/*.vue",
+    "build:mac:components": "vue-cli-service build --target wc --name ezoom-comp './src/components/*.vue'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
