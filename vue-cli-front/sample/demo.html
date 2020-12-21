@@ -4,16 +4,13 @@
 <script src="./ezoom-comp.js"></script>
 
 
-<ezoom-comp @click-fn="testFunction" ></ezoom-comp>
+<ezoom-comp name="John">
+    <input type="text">
+</ezoom-comp>
 
 <script>
-    new Vue({
-        el: "ezoom-comp",
-        data: {},
-        methods: {
-            testFunction: function(event) {
-                console.log('test clicked')
-            }
-        }
+    const comp = document.querySelector('ezoom-comp');
+    comp.addEventListener('click-fn',()=>{
+        console.log('trigger click !!')
     })
 </script>
